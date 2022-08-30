@@ -7,6 +7,9 @@
     height: auto;
     padding: 80px 0;
   }
+  @media (max-width: 580px) {
+    margin-top: -80px;
+  }
   .container {
     height: 100%;
   }

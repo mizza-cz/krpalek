@@ -47,17 +47,13 @@
       margin: 0 auto;
       height: 500px;
     }
-    @media only screen and (min-device-width: 541px) and (max-device-width: 800px) {
-      height: 340px;
+    @media only screen and (min-device-width: 581px) and (max-device-width: 800px) {
+      height: 500px;
       margin: 0 auto;
     }
-    @media only screen and (min-device-width: 421px) and (max-device-width: 540px) {
-      height: 240px;
-      margin: 0 auto;
-    }
-    @media (max-width: 420px) {
-      height: 210px;
-      margin: 0 auto;
+    @media (max-width: 580px) {
+      height: 22rem !important;
+      margin: -80px auto -0px;
     }
     img {
       width: 100%;

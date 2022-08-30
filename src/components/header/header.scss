@@ -1,0 +1,178 @@
+.header {
+  position: relative;
+  z-index: 999;
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    align-items: center;
+    @include media-breakpoint-down(xl) {
+      padding-top: 24px;
+    }
+  }
+  &__logo {
+    width: 154px;
+    height: 59px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  @include media-breakpoint-down(xl) {
+    flex-direction: column !important;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 24px;
+  }
+  li {
+    display: block;
+  }
+}
+.nav-item {
+  padding: 0 16px;
+  margin-top: 6px;
+
+  .nav-link {
+    border-bottom: 2px solid transparent;
+    padding-bottom: 4px;
+    transition: all 0.3s;
+    font-weight: 700;
+    font-size: 16px;
+    @include media-breakpoint-down(xl) {
+      color: var(--color-yellow-primary);
+    }
+    &:hover {
+      border-bottom: 2px solid var(--color-yellow-secondary);
+      color: var(--color-dark);
+      @include media-breakpoint-down(xl) {
+        color: var(--color-yellow-primary);
+      }
+    }
+  }
+}
+.nav-link {
+  text-decoration-color: transparent;
+  display: block;
+  color: var(--color-dark);
+}
+.nav-item--registration {
+  padding-left: 16px;
+  padding-right: 0;
+  .nav-link {
+    font-weight: 900;
+    background-color: var(--color-yellow-secondary);
+    color: var(--color-brown);
+    padding: 5px 26px 4px;
+    font-size: 14px;
+    border-radius: 8px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include media-breakpoint-down(xl) {
+      color: var(--color-brown);
+    }
+  }
+}
+.is-nav-open .header .navbar-expand-lg .navbar-collapse {
+  @include media-breakpoint-down(xl) {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+    height: auto;
+    background-color: var(--color-dark);
+  }
+}
+.c-header__opener {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 0.0625rem solid transparent;
+  border-radius: 0.25rem;
+  transition: box-shadow 0.15s ease-in-out;
+  display: block;
+  position: relative;
+  margin-left: auto;
+  @include media-breakpoint-down(sm) {
+    padding: 0.25rem 1rem;
+  }
+  span {
+    width: 24px;
+    height: 3px;
+    background: var(--color-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+    display: block;
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 3px;
+      background: var(--color-dark);
+      left: 0;
+      right: 0;
+      box-shadow: 0 2px 5px rgba(255, 103, 47, 0.2);
+    }
+    &::before {
+      transform: translateY(-7px);
+    }
+    &::after {
+      transform: translateY(7px);
+    }
+  }
+  &:focus {
+    box-shadow: none;
+  }
+
+  @include media-breakpoint-only(xl) {
+    display: none;
+  }
+  @include media-breakpoint-only(xxl) {
+    display: none;
+  }
+}
+.collapse:not(.show) {
+  display: flex;
+}
+.navbar-expand-lg {
+  @include media-breakpoint-only(lg) {
+    flex-wrap: wrap;
+  }
+  .navbar-collapse {
+    @include media-breakpoint-down(xl) {
+      background-color: var(--color-dark);
+      position: absolute;
+      top: 100%;
+      right: -12px;
+      z-index: 99;
+      width: 19rem;
+      padding: 1rem;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-box-shadow: -1px 0px 34px -1px rgba(0, 0, 0, 0.11);
+      -moz-box-shadow: -1px 0px 34px -1px rgba(0, 0, 0, 0.11);
+      box-shadow: -1px 0px 34px -1px rgba(0, 0, 0, 0.11);
+      transition: opacity 0.3s, visibility 0.3s;
+      flex-wrap: wrap;
+    }
+    @include media-breakpoint-down(sm) {
+      width: 100% !important;
+      right: 0 !important;
+      box-shadow: none !important;
+    }
+  }
+}
+.is-nav-open .header .navbar-expand-lg .navbar-collapse {
+  @include media-breakpoint-down(xl) {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 0s;
+  }
+}

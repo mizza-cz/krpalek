@@ -1,0 +1,65 @@
+.treners-section {
+  background-color: var(--color-light);
+  padding: 132px 0;
+  @media (max-width: 1100px) {
+    padding: 80px 0;
+  }
+  .link {
+    margin: 0 auto;
+  }
+  .h2 {
+    margin-bottom: 70px;
+    display: block;
+    @media (max-width: 1100px) {
+      margin-bottom: 40px;
+    }
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 32px;
+    padding: 0 20px;
+    @media (max-width: 1100px) {
+      margin-bottom: 0;
+    }
+  }
+  &__item {
+    max-width: 50%;
+    flex: 0 0 50%;
+    display: flex;
+    margin-bottom: 70px;
+    width: 100%;
+    @media (max-width: 1100px) {
+      max-width: 100%;
+      flex: 100%;
+    }
+    @media (max-width: 540px) {
+      flex-direction: column;
+    }
+  }
+  &__info {
+    padding: 0 24px;
+    max-width: 410px;
+    @media (max-width: 540px) {
+      max-width: 100%;
+      text-align: center;
+    }
+    .p1 {
+      margin-bottom: 16px;
+    }
+  }
+  &__img {
+    border-radius: 50%;
+    overflow: hidden;
+    max-width: 170px;
+    width: 100%;
+    @media (max-width: 540px) {
+      margin: 0 auto 32px;
+    }
+    img {
+      height: 170px;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

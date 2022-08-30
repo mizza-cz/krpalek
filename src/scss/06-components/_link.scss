@@ -1,0 +1,21 @@
+.link {
+  border-radius: 8px;
+  height: 46px;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  text-decoration-color: transparent;
+  font-weight: 900;
+  font-size: 14px;
+}
+.link--primary {
+  background-color: var(--color-yellow-primary);
+  color: var(--color-light);
+}
+
+.link--secondary {
+  background-color: var(--color-yellow-secondary);
+  color: var(--color-brown);
+}

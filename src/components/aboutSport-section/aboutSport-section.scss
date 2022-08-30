@@ -4,7 +4,7 @@
   @media (max-width: 1100px) {
     padding: 80px 0;
   }
- 
+
   &__inner {
     display: flex;
     @media (max-width: 1100px) {
@@ -27,6 +27,7 @@
     max-width: 50%;
     flex: 0 0 50%;
     padding-left: 24px;
+
     @media only screen and (min-device-width: 681px) and (max-device-width: 1100px) {
       margin-bottom: 120px;
     }
@@ -46,6 +47,7 @@
     height: 444px;
     position: relative;
     border-radius: 50%;
+    background: var(--color-light);
     @media (max-width: 680px) {
       width: 222px;
       height: 222px;
@@ -63,6 +65,7 @@
       height: 256px;
       width: 256px;
       border-radius: 50%;
+      background: var(--color-light);
       @media (max-width: 680px) {
         width: 128px;
         height: 128px;

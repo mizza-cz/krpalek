@@ -193,6 +193,12 @@
 .hp-form .hp-form__label-checkbox {
   display: flex;
   align-items: center;
+  a {
+    text-decoration-color: transparent;
+    &:hover {
+      text-decoration-color: inherit;
+    }
+  }
   input {
     margin-top: 0;
     margin-right: 16px;

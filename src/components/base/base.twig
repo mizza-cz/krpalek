@@ -12,9 +12,9 @@
     <link
       rel="stylesheet"
       media="screen, handheld"
-      href="css/styles.css?v=202209083113"
+      href="css/styles.css?v=202209084341"
     />
-    <link rel="stylesheet" media="print" href="css/prints.css?v=202209083113" />
+    <link rel="stylesheet" media="print" href="css/prints.css?v=202209084341" />
     <link
       rel="preload"
       href="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -31,10 +31,7 @@
   </head>
   <body>
     <div class="base">
-      <div class="hp-top__wrapper">
-        {% include "@components/header/header.twig" %} {% include
-        "@components/hp-top-section/hp-top-section.twig" %}
-      </div>
+      {% include "@components/header/header.twig" %}
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>
@@ -52,6 +49,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/scripts.js?v=202209081219"></script>
+    <script defer src="js/scripts.js?v=202209085254"></script>
   </body>
 </html>

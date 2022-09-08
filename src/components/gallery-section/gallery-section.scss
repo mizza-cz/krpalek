@@ -1,0 +1,22 @@
+.c-gallery-section {
+  .row {
+    margin: 0 -4px -8px;
+    > * {
+      padding-right: 4px;
+      padding-left: 4px;
+      margin-bottom: 8px;
+    }
+  }
+  .col-12 {
+    a {
+      aspect-ratio: 1280/548;
+      display: block;
+    }
+  }
+  .col-6 {
+    a {
+      aspect-ratio: 640/320;
+      display: block;
+    }
+  }
+}

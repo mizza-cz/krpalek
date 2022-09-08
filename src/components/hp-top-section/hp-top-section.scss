@@ -1,11 +1,19 @@
-.hp-top__wrapper {
-  background-color: #d5d7d6;
-}
 .hp-top-section {
   position: relative;
   z-index: 5;
-  overflow: hidden;
-
+  background-color: #d5d7d6;
+  &::before {
+    content: "";
+    position: absolute;
+    top: -162px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 162px;
+    background-color: #d5d7d6;
+    display: block;
+  }
   &__row {
     display: flex;
     align-items: center;
@@ -100,7 +108,7 @@
       align-items: center;
       width: 100%;
     }
-  
+
     .p1 {
       margin-top: 40px;
     }

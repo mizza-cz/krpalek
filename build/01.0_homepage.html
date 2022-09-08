@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
 	<meta name="format-detection" content="telephone=no" />
 	<link rel="preload" href="css/styles.css" as="style" />
-	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209011789" />
-	<link rel="stylesheet" media="print" href="css/prints.css?v=202209011789" />
+	<link rel="stylesheet" media="screen, handheld" href="css/styles.css?v=202209085273" />
+	<link rel="stylesheet" media="print" href="css/prints.css?v=202209085273" />
 	<link rel="preload" href="https://code.jquery.com/jquery-3.6.0.min.js" as="script" crossorigin />
 	<link rel="preload" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" as="script" crossorigin />
 	<link rel="preload" href="js/scripts.js" as="script" />
@@ -16,45 +16,51 @@
 
 <body>
 	<div class="base">
-		<header class="header">
-			<div class="container">
-				<div class="header__inner">
-					<a class="header__logo" href="#">
-						<img src="images/content/logo.png" loading="lazy" alt="" />
-					</a>
-					<button class="c-header__opener js-header__opener" type="button">
-						<span></span>
-					</button>
-					<nav class="navbar navbar-expand-lg">
-						<div class="collapse navbar-collapse" id="navbarNavDropdown">
-							<ul class="navbar-nav">
-								<li class="nav-item">
-									<a class="nav-link" href="#about"> Akademie </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#treners"> Trenéři </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#sport"> Judo </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#gallery"> Galerie </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link" href="#contacts"> Kontakt </a>
-								</li>
-								<li class="nav-item nav-item--registration">
-									<a class="nav-link" href="#registration"> Registrace </a>
-								</li>
-							</ul>
-
-						</div>
-					</nav>
-				</div>
+		<div class="hp-video__wrapper">
+			<div class="hp-top-section__video">
+				<video class="jquery-background-video" autoplay muted loop playsinline>
+					<source src="video/video.mp4" type="video/mp4" />
+				</video>
 			</div>
-		</header>
-		<main class="main" aria-label="Hlavní obsah">
+			<header class="header">
+				<div class="container">
+					<div class="header__inner">
+						<a class="header__logo" href="#">
+							<img src="images/content/logo.png" loading="lazy" alt="" />
+						</a>
+						<button class="c-header__opener js-header__opener" type="button">
+							<span></span>
+						</button>
+						<nav class="navbar navbar-expand-lg">
+							<div class="collapse navbar-collapse" id="navbarNavDropdown">
+								<ul class="navbar-nav">
+									<li class="nav-item">
+										<a class="nav-link" href="#about"> Akademie </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#treners"> Trenéři </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#sport"> Judo </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#gallery"> Galerie </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="#contacts"> Kontakt </a>
+									</li>
+									<li class="nav-item nav-item--registration">
+										<a class="nav-link" href="#registration"> Registrace </a>
+									</li>
+								</ul>
+
+							</div>
+						</nav>
+					</div>
+				</div>
+			</header>
 			<section class="hp-top-section">
+
 				<div class="container">
 					<div class="hp-top-section__inner">
 						<div class="hp-top-section__content">
@@ -71,6 +77,9 @@
 					</div>
 				</div>
 			</section>
+		</div>
+		<main class="main" aria-label="Hlavní obsah">
+
 			<section class="about-section" id="about">
 				<div class="container">
 					<div class="about-section__inner">
@@ -110,6 +119,7 @@
 								</div>
 								<div class="treners-section__info">
 									<p class="p1">Lukáš Krpálek</p>
+									<p class="text-primary mb-3">Trenér Juda</p>
 									<p>
 										Držitel 5. Danu, trenér II. třídy, dvojnásobný olympijský vítěz,
 										dvojnásobný mistr světa a trojnásobný mistr Evropy.
@@ -122,6 +132,7 @@
 								</div>
 								<div class="treners-section__info">
 									<p class="p1">Mgr. Petr Lacina</p>
+									<p class="text-primary mb-3">Trenér Juda</p>
 									<p>
 										Držitel 6. Danu, diplomovaný trenér, 3násobný vítěz ankety Trenér
 										roku ČR, 17 let reprezentační trenér seniorů a osobní trenér
@@ -135,6 +146,7 @@
 								</div>
 								<div class="treners-section__info">
 									<p class="p1">Bc. Václav Sedmidubský</p>
+									<p class="text-primary mb-3">Trenér Juda</p>
 									<p>
 										Držitel 2. Danu, trenér I. třídy, reprezentační trenér juniorů,
 										bývalý reprezentant ČR, 12násobný mistr ČR a akademický mistr
@@ -148,6 +160,7 @@
 								</div>
 								<div class="treners-section__info">
 									<p class="p1">Michal Horák</p>
+									<p class="text-primary mb-3">Trenér Juda</p>
 									<p>
 										Držitel 1. Danu, trenér II. třídy, dlouholetý reprezentant ČR, 1.
 										místo na GP Ulanbátar, 9. místo ME a MS, několikanásobný mistr ČR.
@@ -163,6 +176,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">David Klammert</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
 											Držitel 1. Danu, trenér II. třídy, účastník OH v Tokiu 2021, 5.
 											místo na turnaji Mistrů v Číně..
@@ -175,9 +189,35 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">David Pulkrábek</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
-											Trenér II. třídy, reprezentant ČR, trojnásobný medailista IJF
-											World Judo Tour..
+											Trenér II. třídy, reprezentant ČR, 1. místo na OH dětí a
+											mládeže, trojnásobný medailista IJF tour.
+										</p>
+									</div>
+								</div>
+								<div class="treners-section__item">
+									<div class="treners-section__img">
+										<img src="images/content/judo_avatar.jpeg" loading="lazy" alt="" />
+									</div>
+									<div class="treners-section__info">
+										<p class="p1">Martin Bezděk</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
+										<p>
+											Držitel 1.Kyu, trenér: cvičitel juda, student FTVS UK, 2.místo
+											na OH dětí a mládeže, 9 místo na MS juniorů.
+										</p>
+									</div>
+								</div>
+								<div class="treners-section__item">
+									<div class="treners-section__img">
+										<img src="images/content/judo_avatar.jpeg" loading="lazy" alt="" />
+									</div>
+									<div class="treners-section__info">
+										<p class="p1">Pavel Provázek</p>
+										<p>
+											Kondiční trenér a výživový poradce, držitel prvního 1. Kyu, dip.
+											trenér FTVS UK. Kondiční trenér Lukáše Krpálka.
 										</p>
 									</div>
 								</div>
@@ -187,6 +227,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">Adam Kopecký</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
 											Držitel 2. Danu, dorostenecký mistr světa a Evropy. Medailista z
 											mistrovství světa juniorů.
@@ -199,6 +240,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">Mgr. Michal Mrva</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>Držitel 1. Danu, dvojnásobný mistr ČR.</p>
 									</div>
 								</div>
@@ -208,6 +250,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">Mgr. Jiří Petr</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
 											Držitel 1. Danu, reprezentant ČR, 9. místo na mistrovství světa,
 											medailista z European Open, několikanásobný mistr ČR.
@@ -220,6 +263,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">Mgr. Ivan Petr</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
 											Držitel 1. Danu, trenér III. třídy, 9. místo na MS seniorů,
 											reprezentant ČR a několikanásobný medailista ze světového poháru
@@ -232,6 +276,7 @@
 									</div>
 									<div class="treners-section__info">
 										<p class="p1">Radim Knápek</p>
+										<p class="text-primary mb-3">Trenér Juda</p>
 										<p>
 											Držitel 1. Danu, trenér III. Třídy, reprezentant ČR a mistr ČR.
 										</p>
@@ -437,11 +482,10 @@
 		<footer class="footer">
 			<p>© 2022 Krpálek Academy - Všechna práva vyhrazena</p>
 		</footer>
-
 	</div>
 	<script defer src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-	<script defer src="js/scripts.js?v=20220901324"></script>
+	<script defer src="js/scripts.js?v=202209082763"></script>
 </body>
 
 </html>

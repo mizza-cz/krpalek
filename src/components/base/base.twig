@@ -12,9 +12,9 @@
     <link
       rel="stylesheet"
       media="screen, handheld"
-      href="css/styles.css?v=202209012886"
+      href="css/styles.css?v=202209081017"
     />
-    <link rel="stylesheet" media="print" href="css/prints.css?v=202209012886" />
+    <link rel="stylesheet" media="print" href="css/prints.css?v=202209081017" />
     <link
       rel="preload"
       href="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -31,12 +31,25 @@
   </head>
   <body>
     <div class="base">
-      {% include "@components/header/header.twig" %}
+      <div class="hp-video__wrapper">
+        <div class="hp-top-section__video">
+          <video
+            class="jquery-background-video"
+            autoplay
+            muted
+            loop
+            playsinline
+          >
+            <source src="video/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+        {% include "@components/header/header.twig" %} {% include
+        "@components/hp-top-section/hp-top-section.twig" %}
+      </div>
       <main class="main" aria-label="Hlavní obsah">
         {% block main %}{% endblock %}
       </main>
       {% include "@components/footer/footer.twig" %}
-     
     </div>
     <script
       defer
@@ -50,6 +63,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
-    <script defer src="js/scripts.js?v=20220901324"></script>
+    <script defer src="js/scripts.js?v=202209082763"></script>
   </body>
 </html>

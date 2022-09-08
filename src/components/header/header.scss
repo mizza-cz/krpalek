@@ -48,7 +48,7 @@
     }
     &:hover {
       border-bottom: 2px solid var(--color-yellow-secondary);
-      color: var(--color-dark);
+      color: var(--color-light);
       @include media-breakpoint-down(xl) {
         color: var(--color-yellow-primary);
       }
@@ -58,7 +58,7 @@
 .nav-link {
   text-decoration-color: transparent;
   display: block;
-  color: var(--color-dark);
+  color: var(--color-light);
 }
 .nav-item--registration {
   padding-left: 16px;

@@ -1,6 +1,10 @@
 .contacts-section {
   padding-top: 108px;
   padding-bottom: 70px;
+  .social {
+    margin-bottom: 0;
+    margin-top: 4px;
+  }
   @media (max-width: 1100px) {
     padding-top: 80px;
     padding-bottom: 40px;

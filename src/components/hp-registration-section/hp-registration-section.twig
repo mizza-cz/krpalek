@@ -21,15 +21,25 @@
             <div class="hp-form__row">
               <label for="">
                 Jméno *
-                <input type="text" placeholder="Martin" required />
+                <input id="name" type="text" placeholder="Martin" required />
               </label>
               <label for="">
                 Příjmení *
-                <input type="text" placeholder="Tellinger" required />
+                <input
+                  id="surname"
+                  type="text"
+                  placeholder="Tellinger"
+                  required
+                />
               </label>
               <label for="">
                 Datum narození *
-                <input type="text" placeholder="Tellinger" required />
+                <input
+                  id="birthday"
+                  type="text"
+                  placeholder="Tellinger"
+                  required
+                />
               </label>
               <label for="">
                 Rodné číslo
@@ -37,12 +47,12 @@
               </label>
               <label for="">
                 Adresa bydliště *
-                <input type="text" required placeholder="" />
+                <input id="adress" type="text" required placeholder="" />
               </label>
 
               <label for="">
                 Fotka
-                <input type="file" required placeholder="" />
+                <input type="file" placeholder="" />
               </label>
               <label class="hp-form__label-width" for=""
                 >Dřívější zkušenost se sportem?
@@ -99,20 +109,26 @@
               <h6 class="h4">Údaje zákonného zástupce</h6>
               <label for="">
                 Jméno *
-                <input type="text" placeholder="Martin" required />
+                <input type="text" id="name2" placeholder="Martin" required />
               </label>
               <label for="">
                 Příjmení *
-                <input type="text" placeholder="Tellinger" required />
+                <input
+                  type="text"
+                  id="surname2"
+                  placeholder="Tellinger"
+                  required
+                />
               </label>
               <label for="">
                 Telefon *
-                <input type="tel" required placeholder="+420" />
+                <input type="tel" id="tel" required placeholder="+420" />
               </label>
 
               <label for="">
                 E - mail *
                 <input
+                  id="email"
                   type="email"
                   placeholder="martin@tellinger.cz"
                   required
@@ -137,7 +153,9 @@
                 >
               </label>
             </div>
-            <button class="link link--secondary">Odeslat registraci</button>
+            <button type="button" id="submit" class="link link--secondary">
+              Odeslat registraci
+            </button>
           </form>
         </div>
       </div>
